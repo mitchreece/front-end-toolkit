@@ -1,0 +1,9 @@
+{
+  "name": "front-end-toolkit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": "git@gitlab.com:mitchreece/front-end-toolkit.git",
+  "author": "Mitch Reece <mitchellreece18@gmail.com>",
+  "license": "MIT"
+}
