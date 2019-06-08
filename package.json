@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "workspaces": [
+    "packages/formatters/*"
+  ],
   "repository": "git@gitlab.com:mitchreece/front-end-toolkit.git",
   "author": "Mitch Reece <mitchellreece18@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true
 }

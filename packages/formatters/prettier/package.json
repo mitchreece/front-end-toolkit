@@ -1,0 +1,8 @@
+{
+  "name": "@mitchreece/prettier-config",
+  "version": "0.0.1",
+  "description": "configuration options for prettier code formatter",
+  "main": "index.js",
+  "author": "Mitch Reece <mitchellreece18@gmail.com>",
+  "license": "MIT"
+}
