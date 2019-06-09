@@ -6,6 +6,11 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "testMatch": [
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ]
+  },
   "author": "Mitch Reece <mitchellreece18@gmail.com>",
   "license": "MIT",
   "devDependencies": {

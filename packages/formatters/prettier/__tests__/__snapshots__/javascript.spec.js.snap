@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JavaScript formatting matches snapshot 1`] = `
+"const Country = Object.freeze({
+    GB: 'Great Britain',
+    FR: 'France',
+    AU: 'Australia',
+    US: 'United States',
+});
+
+const getCountryCode = country => {
+    const countryMatch = Object.values(Country).indexOf(country);
+
+    return {
+        name: country,
+        ...(countryMatch && {
+            code: Object.keys(Country)[countryMatch],
+        }),
+    };
+};
+
+const countries = ['Great Britian', 'France', 'United States'];
+
+module.exports = countries.map(getCountryCode);
+"
+`;
