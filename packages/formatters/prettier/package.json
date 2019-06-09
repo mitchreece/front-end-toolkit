@@ -3,6 +3,13 @@
   "version": "0.0.1",
   "description": "configuration options for prettier code formatter",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "author": "Mitch Reece <mitchellreece18@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2"
+  }
 }
