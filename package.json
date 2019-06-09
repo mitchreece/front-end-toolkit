@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "repository": "git@gitlab.com:mitchreece/front-end-toolkit.git",
+  "repository": "git@github.com:mitchreece/front-end-toolkit.git",
   "author": "Mitch Reece <mitchellreece18@gmail.com>",
   "license": "MIT"
 }
