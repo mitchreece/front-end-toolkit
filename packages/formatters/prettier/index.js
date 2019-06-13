@@ -4,12 +4,4 @@ module.exports = {
   semi: false,
   arrowParens: 'always',
   trailingComma: 'es5',
-  overrides: [
-    {
-      files: ['*.json', '*.yml'],
-      options: {
-        tabWidth: 2,
-      },
-    },
-  ],
-};
+}
