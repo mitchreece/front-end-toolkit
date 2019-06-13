@@ -1,13 +1,15 @@
 module.exports = {
-    tabWidth: 4,
-    singleQuote: true,
-    trailingComma: 'es5',
-    overrides: [
-        {
-            files: ['*.json', '*.yml'],
-            options: {
-                tabWidth: 2,
-            },
-        },
-    ],
+  tabWidth: 2,
+  singleQuote: true,
+  semi: false,
+  arrowParens: 'always',
+  trailingComma: 'es5',
+  overrides: [
+    {
+      files: ['*.json', '*.yml'],
+      options: {
+        tabWidth: 2,
+      },
+    },
+  ],
 };
