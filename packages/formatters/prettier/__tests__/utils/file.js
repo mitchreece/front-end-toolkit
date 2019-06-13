@@ -1,6 +1,7 @@
-const fs = require('fs');
-const prettier = require('prettier');
-const prettierConfig = require('../../index');
+const fs = require('fs')
+const { resolve } = require('path')
+const prettier = require('prettier')
+const prettierConfig = require('../../index')
 
 /**
  * Reads a sepecified file
@@ -12,11 +13,11 @@ const prettierConfig = require('../../index');
  * @returns encoded file contents
  */
 module.exports.getFileContent = (filePath, options = {}) => {
-    return fs.readFileSync(filePath, {
-        encoding: 'utf-8',
-        ...options,
-    });
-};
+  return fs.readFileSync(filePath, {
+    encoding: 'utf-8',
+    ...options,
+  })
+}
 
 /**
  * Formats a files content
@@ -28,8 +29,18 @@ module.exports.getFileContent = (filePath, options = {}) => {
  * @returns formatted file
  */
 module.exports.formatFile = (fileContent, options = {}) => {
-    return prettier.format(
-        fileContent,
-        Object.assign({}, prettierConfig, options)
-    );
-};
+  return prettier.format(fileContent, { ...prettierConfig, ...options })
+}
+
+/**
+ * Generates prettier config using editorconfig options
+ *
+ * @returns response from prettier api resolveConfig method
+ */
+module.exports.getEditorconfig = () => {
+  const prettierResetPath = resolve(__dirname, '../samples/.prettierrc.js')
+
+  return prettier.resolveConfig(prettierResetPath, {
+    editorconfig: true,
+  })
+}
