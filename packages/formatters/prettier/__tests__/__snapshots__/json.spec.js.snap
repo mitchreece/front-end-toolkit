@@ -2,32 +2,32 @@
 
 exports[`JSON formatting matches snapshot 1`] = `
 "{
-    \\"users\\": [
-        {
-            \\"name\\": \\"John Smith\\",
-            \\"age\\": 32,
-            \\"email\\": \\"johnsmith@example.com\\",
-            \\"active\\": true
-        },
-        {
-            \\"name\\": \\"Marie Collins\\",
-            \\"age\\": 26,
-            \\"email\\": \\"marie.collins@example.com\\",
-            \\"active\\": true
-        },
-        {
-            \\"name\\": \\"John Doe\\",
-            \\"age\\": 82,
-            \\"email\\": \\"johndoe@example.com\\",
-            \\"active\\": false
-        },
-        {
-            \\"name\\": \\"Max Jones\\",
-            \\"age\\": 21,
-            \\"email\\": \\"johnsmith@example.com\\",
-            \\"active\\": true
-        }
-    ]
+  \\"users\\": [
+    {
+      \\"name\\": \\"John Smith\\",
+      \\"age\\": 32,
+      \\"email\\": \\"johnsmith@example.com\\",
+      \\"active\\": true
+    },
+    {
+      \\"name\\": \\"Marie Collins\\",
+      \\"age\\": 26,
+      \\"email\\": \\"marie.collins@example.com\\",
+      \\"active\\": true
+    },
+    {
+      \\"name\\": \\"John Doe\\",
+      \\"age\\": 82,
+      \\"email\\": \\"johndoe@example.com\\",
+      \\"active\\": false
+    },
+    {
+      \\"name\\": \\"Max Jones\\",
+      \\"age\\": 21,
+      \\"email\\": \\"johnsmith@example.com\\",
+      \\"active\\": true
+    }
+  ]
 }
 "
 `;
