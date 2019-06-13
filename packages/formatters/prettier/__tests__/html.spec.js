@@ -1,13 +1,25 @@
-const { resolve } = require('path');
-const { getFileContent, formatFile } = require('./utils/file');
+const { resolve } = require('path')
+const { getFileContent, getEditorconfig, formatFile } = require('./utils/file')
 
-const filePath = resolve(__dirname, './samples/sample.html');
+const filePath = resolve(__dirname, './samples/sample.html')
 
 describe('HTML formatting', () => {
-    test('matches snapshot', () => {
-        const fileContents = getFileContent(filePath);
-        const formattedFile = formatFile(fileContents, { parser: 'html' });
+  const fileContents = getFileContent(filePath)
+  const parser = 'html'
+  const prettierFormat = formatFile(fileContents, { parser })
 
-        expect(formattedFile).toMatchSnapshot();
-    });
-});
+  test('matches snapshot', () => {
+    expect(prettierFormat).toMatchSnapshot()
+  })
+
+  test('is same with editorconfig', async () => {
+    const editorconfig = await getEditorconfig()
+
+    const editorconfigFormat = formatFile(fileContents, {
+      ...editorconfig,
+      parser,
+    })
+
+    expect(editorconfigFormat).toEqual(prettierFormat)
+  })
+})

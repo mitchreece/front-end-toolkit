@@ -1,13 +1,24 @@
-const { resolve } = require('path');
-const { getFileContent, formatFile } = require('./utils/file');
+const { resolve } = require('path')
+const { getFileContent, getEditorconfig, formatFile } = require('./utils/file')
 
-const filePath = resolve(__dirname, './samples/sample.json');
+const filePath = resolve(__dirname, './samples/sample.json')
 
 describe('JSON formatting', () => {
-    test('matches snapshot', () => {
-        const fileContents = getFileContent(filePath);
-        const formattedFile = formatFile(fileContents, { parser: 'json' });
+  const fileContents = getFileContent(filePath)
+  const parser = 'json'
+  const prettierFormat = formatFile(fileContents, { parser })
 
-        expect(formattedFile).toMatchSnapshot();
-    });
-});
+  test('matches snapshot', () => {
+    expect(prettierFormat).toMatchSnapshot()
+  })
+
+  test('is same with editorconfig', async () => {
+    const editorconfig = await getEditorconfig()
+    const editorconfigFormat = formatFile(fileContents, {
+      ...editorconfig,
+      parser,
+    })
+
+    expect(editorconfigFormat).toEqual(prettierFormat)
+  })
+})
