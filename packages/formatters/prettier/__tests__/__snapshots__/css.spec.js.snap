@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CSS formatting matches snapshot 1`] = `
+":root {
+  --colour-lightest: #ffffff;
+  --colour-light: #e6e6e6;
+  --color-primary: #53f342;
+  --color-error: red;
+  --colour-font-light: #e6e6e6;
+  --colour-font-dark: #333333;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--colour-font-dark);
+}
+
+.card {
+  background-color: var(--colour-lightest);
+}
+
+.button--cta {
+  color: var(--colour-light);
+  background-color: var(--colour-primary);
+}
+
+.button--error {
+  color: var(--colour-light);
+  background-color: var(--colour-error);
+}
+"
+`;
