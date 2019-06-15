@@ -1,18 +1,29 @@
 {
   "name": "@mitchreece/prettier-config",
   "version": "0.0.1",
-  "description": "configuration options for prettier code formatter",
+  "description": "configuration for prettier code formatter",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "yarn test"
   },
   "jest": {
     "testMatch": [
       "**/?(*.)+(spec|test).[jt]s?(x)"
     ]
   },
+  "repository": "git@github.com:mitchreece/front-end-toolkit.git",
   "author": "Mitch Reece <mitchellreece18@gmail.com>",
+  "keywords": [
+    "prettier",
+    "config",
+    "javascript"
+  ],
   "license": "MIT",
+  "private": false,
   "devDependencies": {
     "jest": "^24.8.0",
     "prettier": "^1.18.2"
