@@ -1,0 +1,12 @@
+{
+  "name": "@mitchreece/eslint-config-base",
+  "description": "Base eslint config options for javascript projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mitchreece/front-end-toolkit.git",
+  "author": "Mitch Reece <mitchellreece18@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.0.1"
+  }
+}

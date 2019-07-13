@@ -8,7 +8,8 @@
   },
   "prettier": "@mitchreece/prettier-config",
   "workspaces": [
-    "packages/formatters/*"
+    "packages/formatters/*",
+    "packages/linters/*"
   ],
   "repository": "git@github.com:mitchreece/front-end-toolkit.git",
   "author": "Mitch Reece <mitchellreece18@gmail.com>",
