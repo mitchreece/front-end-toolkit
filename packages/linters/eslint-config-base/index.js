@@ -1,7 +1,9 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    ...['./rules/variables', './rules/style'].map(require.resolve),
+    ...['./rules/variables', './rules/style', './rules/possible-errors'].map(
+      require.resolve
+    ),
   ],
   parserOptions: {
     ecmaVersion: 2019,
