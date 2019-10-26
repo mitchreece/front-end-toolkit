@@ -22,4 +22,7 @@ module.exports = {
     // disallow the use of alert, confirm, and prompt
     'no-alert': 'error',
   },
+  parserOptions: {
+    sourceType: 'script',
+  },
 }
