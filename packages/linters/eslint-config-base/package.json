@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:mitchreece/front-end-toolkit.git",
   "author": "Mitch Reece <mitchellreece18@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "^6.6.0"
+  }
 }
