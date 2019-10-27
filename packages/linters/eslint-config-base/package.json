@@ -3,9 +3,20 @@
   "description": "Base eslint config options for javascript projects",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "testMatch": [
+      "**/?(*.)+(spec|test).[jt]s?(x)"
+    ]
+  },
   "repository": "git@github.com:mitchreece/front-end-toolkit.git",
   "author": "Mitch Reece <mitchellreece18@gmail.com>",
   "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
   "peerDependencies": {
     "eslint": "^6.6.0"
   }
