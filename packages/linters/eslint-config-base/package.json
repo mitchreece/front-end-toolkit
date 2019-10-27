@@ -1,10 +1,17 @@
 {
   "name": "@mitchreece/eslint-config-base",
-  "description": "Base eslint config options for javascript projects",
+  "description": "Standard eslint config options for javascript projects",
   "version": "1.0.0",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "node.js",
+    "browser.js",
+    "/rules"
+  ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "yarn test"
   },
   "jest": {
     "testMatch": [
