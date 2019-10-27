@@ -4,14 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .",
     "format": "prettier --write '**/*.{js,css,html,md,json}'"
   },
   "prettier": "@mitchreece/prettier-config",
   "workspaces": [
-    "packages/formatters/*"
+    "packages/formatters/*",
+    "packages/linters/*"
   ],
   "repository": "git@github.com:mitchreece/front-end-toolkit.git",
   "author": "Mitch Reece <mitchellreece18@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1"
+  }
 }

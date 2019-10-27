@@ -1,0 +1,10 @@
+{
+  "extends": ["@mitchreece/eslint-config-base/node", "prettier"],
+  "env": {
+    "jest": true
+  },
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error" 
+  }
+}
